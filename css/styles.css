@@ -1,0 +1,139 @@
+/*************
+*  SETTING
+**************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*************
+*  COLORS
+**************/
+/*************
+*  FONTS
+**************/
+/*************
+*  GRID
+**************/
+/*************
+*  LAYOUT
+**************/
+/*************
+*  MIXIN
+**************/
+body {
+  background: center no-repeat url("../img/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 650px) {
+    body {
+      height: 100%; } }
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  height: auto; }
+  @media only screen and (max-width: 650px) {
+    .container {
+      margin: 20px 0; } }
+  .container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif; }
+    @media only screen and (max-width: 650px) {
+      .container .content {
+        flex-direction: column;
+        align-items: center; } }
+    .container .content section:nth-child(1) {
+      background-color: #013243;
+      width: 100%;
+      max-width: 325px;
+      height: 425px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      text-align: center;
+      padding-top: 33px;
+      position: relative; }
+      @media only screen and (max-width: 650px) {
+        .container .content section:nth-child(1) {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px; } }
+      .container .content section:nth-child(1) h2 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #ffffff; }
+      .container .content section:nth-child(1) p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #5e95a8;
+        margin-top: 7px; }
+      .container .content section:nth-child(1) img {
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .container .content section:nth-child(2) {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 325px;
+      height: 425px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 1px solid #d8d8d8;
+      color: #000000;
+      padding: 33px 50px; }
+      @media only screen and (max-width: 650px) {
+        .container .content section:nth-child(2) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px; } }
+      .container .content section:nth-child(2) form {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px; }
+        .container .content section:nth-child(2) form h2 {
+          font-size: 25px;
+          font-weight: 700;
+          margin-bottom: 20px; }
+        .container .content section:nth-child(2) form label {
+          font-weight: 700;
+          margin-bottom: 7px; }
+        .container .content section:nth-child(2) form input[type="email"],
+        .container .content section:nth-child(2) form input[type="password"] {
+          padding: 13px;
+          border: 1px solid #d8d8d8;
+          border-radius: 4px; }
+        .container .content section:nth-child(2) form input[type="email"] {
+          margin-bottom: 20px; }
+        .container .content section:nth-child(2) form .check {
+          display: flex;
+          margin: 20px 0; }
+          .container .content section:nth-child(2) form .check input[type="checkbox"] {
+            margin-right: 7px; }
+          .container .content section:nth-child(2) form .check p {
+            line-height: 140%; }
+            .container .content section:nth-child(2) form .check p a {
+              color: #013243; }
+        .container .content section:nth-child(2) form button {
+          border: none;
+          padding: 13px;
+          background-color: #013243;
+          color: #ffffff;
+          font-weight: 700;
+          border-radius: 4px;
+          transition: all 0.6s; }
+          .container .content section:nth-child(2) form button:hover {
+            cursor: pointer;
+            transition: all 0.4s;
+            background-color: #000000; }
+
+/*# sourceMappingURL=styles.css.map */
