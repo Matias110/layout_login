@@ -2,9 +2,9 @@
 *  SETTING
 **************/
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*************
@@ -22,7 +22,7 @@ $img-url: url('../img/background.png');
 **************/
 $font-family: 'Roboto', sans-serif;
 $font-title: 25px;
-$font-paragraph: 14px; 
+$font-paragraph: 14px;
 $font-bold: 700;
 $font-regular: 400;
 
@@ -31,7 +31,7 @@ $font-regular: 400;
 **************/
 $max-width: 650px;
 $max-section: $max-width - 325;
-$max-height: $max-section + 100;
+$max-height: $max-section+100;
 
 /*************
 *  LAYOUT
@@ -48,27 +48,25 @@ $line-height: 140%;
 /*************
 *  MIXIN
 **************/
-@mixin btn ($padding-input, $color-blue, $color-white, $font-bold, $border-radius){
-	border: none;
-	padding: $padding-input;
-	background-color: $color-blue;
-	color: $color-white;
-    font-weight: $font-bold;
-    border-radius: $border-radius;
-    transition: all 0.6s;
-    &:hover {
-     cursor: pointer;
-     transition: all 0.4s;
-     background-color: $color-black;
-    }
+@mixin btn ($padding-input, $color-blue, $color-white, $font-bold, $border-radius) {
+  border: none;
+  padding: $padding-input;
+  background-color: $color-blue;
+  color: $color-white;
+  font-weight: $font-bold;
+  border-radius: $border-radius;
+  transition: all 0.6s;
+  &:hover {
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: $color-black;
+  }
 }
-
 @mixin responsive($max-width) {
   @media only screen and(max-width: $max-width) {
     @content;
   }
 }
-
 body {
   background: center no-repeat $img-url;
   background-size: cover;
@@ -78,7 +76,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-   @include responsive($max-width) {
+  @include responsive($max-width) {
     height: 100%;
   }
 }
@@ -161,8 +159,7 @@ body {
           font-weight: $font-bold;
           margin-bottom: $space-text;
         }
-        input[type="email"],
-        input[type="password"] {
+        input[type="email"], input[type="password"] {
           padding: $padding-input;
           border: $color-border-grey;
           border-radius: $border-radius;
@@ -184,13 +181,7 @@ body {
           }
         }
         button {
-          @include btn(
-            $padding-input,
-            $color-blue,
-            $color-white,
-            $font-bold,
-            $border-radius
-          );
+          @include btn( $padding-input, $color-blue, $color-white, $font-bold, $border-radius);
         }
       }
     }
